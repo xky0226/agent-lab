@@ -1,0 +1,14 @@
+# 仓库里统一存 LF，检出时按平台转换。
+# 不加这个，Windows 上每次 add 都会刷一屏 "LF will be replaced by CRLF" 警告，
+# 而且同一份文件在不同机器上 diff 会整份飘红。
+* text=auto
+
+*.py   text diff=python
+*.md   text
+*.json text
+*.toml text
+*.lock text
+
+*.png  binary
+*.jpg  binary
+*.pdf  binary

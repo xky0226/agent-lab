@@ -1,0 +1,15 @@
+.env*
+!.env.example
+.venv/
+__pycache__/
+.idea/
+
+# Windows 目录联接（指向仓库内的 docs_bak）。
+# 本机保留着当测试靶子用；但 git 会把它当普通目录递归进去复制一份内容，
+# 而且别的系统上根本不存在这个联接 —— 所以不入库。
+近路
+docs/近路
+notes/近路
+
+# 会话存档（运行期产物，各人本机不同）
+sessions/*.json
